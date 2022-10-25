@@ -1,4 +1,5 @@
 import { useState, useEffect } from "react";
+import Entry from "./components/Entry";
 import { Navigation } from "./components/navigation";
 import { Header } from "./components/header";
 import { Features } from "./components/features";
@@ -99,16 +100,19 @@ const App = () => {
 
   return (
     <div>
-      <Navigation />
+      <Entry></Entry>
 
-      <Header data={landingPageData.Header} />
-      <Features data={landingPageData.Features} />
-      <About data={landingPageData.About} />
-      <Services data={landingPageData.Services} />
-      <Gallery data={landingPageData.Gallery} />
-      <Testimonials data={landingPageData.Testimonials} />
-      <Team data={landingPageData.Team} />
-      <Contact data={landingPageData.Contact} />
+      {/* <div>
+        <Navigation />
+        <Header data={landingPageData.Header} />
+        <Features data={landingPageData.Features} />
+        <About data={landingPageData.About} />
+        <Services data={landingPageData.Services} />
+        <Gallery data={landingPageData.Gallery} />
+        <Testimonials data={landingPageData.Testimonials} />
+        <Team data={landingPageData.Team} />
+        <Contact data={landingPageData.Contact} />
+      </div> */}
     </div>
   );
 };

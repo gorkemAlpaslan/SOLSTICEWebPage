@@ -100,6 +100,7 @@ hr {
 #menu.navbar-default .navbar-nav > li > a:after {
   display: block;
   position: absolute;
+  z-index: 10;
   left: 0;
   bottom: -1px;
   width: 0;
@@ -622,4 +623,98 @@ label {
   width: 100%;
   text-align: center;
   color: #ffffff;
+}
+
+.Opening-scane {
+  width: 100%;
+  height: 100%;
+  padding: 0px;
+  margin: 0px auto;
+  background-color: #000000;
+  overflow: hidden;
+}
+
+.testperent {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+  margin: 0px;
+  height: 100%;
+  overflow: hidden;
+}
+
+.test {
+  background-color: transparent;
+  margin-top: -200px;
+  z-index: 1111;
+  font-family: "prompt-extralight", sans-serif;
+  font-weight: 100;
+  animation-name: myAnimation;
+  animation-duration: 4000ms;
+  opacity: 0.8;
+  height: 30px;
+}
+
+@media (max-width: 500px) {
+  .test {
+    font-size: 20px;
+    padding: 1px;
+    animation-name: myAnimationMonile;
+    animation-duration: 4000ms;
+  }
+  @keyframes myAnimationMonile {
+    0% {
+      opacity: 0;
+    }
+    80% {
+      opacity: 0;
+      font-size: 16px;
+    }
+
+    100% {
+      opacity: 0.8;
+      font-size: 20px;
+    }
+  }
+}
+
+.test2 {
+  background-color: transparent;
+  z-index: 1111;
+  font-family: "prompt-extralight", sans-serif;
+  font-weight: 100;
+  font-size: 16px;
+  animation-name: myAnimation2;
+  animation-duration: 1500ms;
+  opacity: 0.8;
+  height: 30px;
+}
+@keyframes myAnimation {
+  0% {
+    opacity: 0;
+  }
+  80% {
+    opacity: 0;
+    font-size: 30px;
+  }
+
+  100% {
+    opacity: 0.8;
+    font-size: 36px;
+  }
+}
+@keyframes myAnimation2 {
+  0% {
+    opacity: 0;
+  }
+  80% {
+    opacity: 0;
+    font-size: 12px;
+  }
+
+  100% {
+    opacity: 0.8;
+    font-size: 16px;
+  }
 }
